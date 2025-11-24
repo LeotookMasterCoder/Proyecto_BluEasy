@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #353f47;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-grid {
+    display: grid;
+    gap: 0px;
+}
+
+.cabecera {
+    background-color: #515f67;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo-e {
+    color: #5bc0de;
+}
+
+.navegacion ul {
+    list-style: none;
+    gap: 15px;
+}
+
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.Observar {
+    background-image: url('../assets/images/Fondo.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.cita {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    background-color: #353f47;
+
+}
+.cita2 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    background-color: #353f47;
+    margin-top: 10px;
+}
+
+.servicios {
+    background-color: #5bc0de;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.servicios .contenedor-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.item-servicio {
+    text-align: left;
+}
+
+.item-servicio img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.item-servicio h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.item-servicio p {
+    font-size: 12px;
+}
+
+.portafolio {
+    padding: 40px 0;
+}
+
+.portafolio h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #999;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.nav-portafolio ul {
+    list-style: none;
+    gap: 40px;
+    justify-content: end;
+    margin-bottom: 70px;
+}
+
+.nav-portafolio li {
+    color: #353f47;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+li.active {
+    color: #5bc0de;
+    border-color: #5bc0de;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.galeria {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+.seccion-predeterminada {
+    background-color: #515f67;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.seccion-predeterminada .contenedor-flex {
+    gap: 30px;
+}
+
+.seccion-predeterminada .contenido-texto {
+    flex: 1;
+}
+
+.seccion-predeterminada h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.seccion-predeterminada p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.seccion-predeterminada .contenido-imagen {
+    flex: 1;
+}
+
+.seccion-predeterminada img {
+    width: 100%;
+    height: auto;
+}
+
+.seccion-twitter {
+    background-color: #5bc0de;
+    padding: 30px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.seccion-twitter h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.twitter-icon {
+    position: relative;
+    left: 570px;
+    width: 15px;
+    height: 15px;
+}
+.seccion-twitter p {
+    font-size: 12px;
+}
+
+.twitter-handle {
+    color: #fff;
+}
+
+.quien-es-john-doe {
+    background-image: url('../assets/images/bg_whoIs.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.quien-es-john-doe .contenedor-flex {
+    gap: 30px;
+}
+
+.quien-es-john-doe .texto-izquierdo,
+.quien-es-john-doe .texto-derecho {
+    flex: 1;
+    padding: 15px;
+}
+
+.quien-es-john-doe h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.quien-es-john-doe p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.testimonios {
+    padding: 40px 0;
+    text-align: left;
+}
+
+.testimonios h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #999;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.testimonios blockquote {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #353f47;
+    position: relative;
+}
+
+.testimonios blockquote::after {
+    content: "”";
+    font-size: 40px;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    color: #ddd;
+}
+
+.testimonios cite {
+    display: block;
+    color: #999;
+    font-size: 12px;
+}
+
+.contacto {
+    background-image: url('../assets/images/bg_contact.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.contacto .contenedor-flex {
+    gap: 30px;
+}
+
+.contacto .contenido-formulario {
+    flex: 2;
+}
+
+.contacto h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacto label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 10px;
+    border: none;
+    background: #fff;
+    color: #353f47;
+    font-size: 12px;
+}
+
+.contacto button {
+    background: #5bc0de;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.contacto .contenido-texto {
+    flex: 1;
+}
+
+.contacto p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.pie {
+    background-color: #353f47;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+.pie .contenedor-flex {
+    justify-content: space-between;
+    gap: 0;
+}
+
+.pie ul {
+    list-style: none;
+    gap: 10px;
+}
+
+.pie li:not(:last-child)::after {
+    content: " | ";
+    color: #fff;
+}
+
+.pie a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1279px) {
+    .contenedor {
+        max-width: 1200px;
+        padding: 0 60px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1278px) {
+    .contenedor {
+        max-width: 750px;
+    }
+
+    .servicios .contenedor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seccion-predeterminada .contenedor-flex,
+    .quien-es-john-doe .contenedor-flex,
+    .contacto .contenedor-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Observar {
+        height: 250px;
+    }
+
+    .cita {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 358px) and (max-width: 767px) {
+    .contenedor {
+        padding: 0 15px;
+    }
+
+    .cabecera .contenedor-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navegacion ul {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .servicios {
+        padding: 30px 0;
+    }
+
+    .servicios .contenedor-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portafolio {
+        padding: 30px 0;
+    }
+
+    .nav-portafolio ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .seccion-predeterminada {
+        padding: 30px 0;
+    }
+
+    .seccion-predeterminada .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .seccion-twitter {
+        padding: 20px 0;
+    }
+
+    .quien-es-john-doe {
+        padding: 30px 0;
+    }
+
+    .quien-es-john-doe .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .testimonios {
+        padding: 30px 0;
+    }
+
+    .contacto {
+        padding: 30px 0;
+    }
+
+    .contacto .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .pie .contenedor-flex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pie ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Observar {
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .cita {
+        font-size: 18px;
+        max-width: 100%;
+    }
+}
