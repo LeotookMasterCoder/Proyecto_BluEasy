@@ -148,7 +148,7 @@ body {
 
 li.active {
     color: #5bc0de;
-    border-color: #5bc0de;
+    border: 2px solid #5bc0de;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
@@ -332,8 +332,8 @@ li.active {
 .contacto input,
 .contacto textarea {
     padding: 10px;
-    border: none;
-    background: #fff;
+    border: 2px solid white;
+    background: transparent;
     color: #353f47;
     font-size: 12px;
 }
@@ -347,6 +347,18 @@ li.active {
     font-size: 12px;
     text-transform: uppercase;
     align-self: flex-start;
+}
+.visits {
+    color: gray;
+    background: transparent;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.redes {
+    font-size: 30px;
 }
 
 .contacto .contenido-texto {
@@ -367,7 +379,7 @@ li.active {
 
 .pie .contenedor-flex {
     justify-content: space-between;
-    gap: 0;
+    gap: 20px;
 }
 
 .pie ul {
@@ -381,7 +393,7 @@ li.active {
 }
 
 .pie a {
-    color: #fff;
+    color: gray;
     text-decoration: none;
     text-transform: uppercase;
 }
